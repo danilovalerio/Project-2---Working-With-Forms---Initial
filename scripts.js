@@ -15,7 +15,13 @@ const handlingForms = {
 
     data() {
         return {
-            members: window.members
+            members: window.members,
+            //novo membro com seus atributos nulos
+            newMember: {
+                fname: null,
+                lname: null,
+                instrument: null,
+            }
         }
     },
 
