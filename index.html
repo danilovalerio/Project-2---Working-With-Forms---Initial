@@ -34,6 +34,8 @@
                     <td>{{member.fname}}</td>
                     <td>{{member.lname}}</td>
                     <td>{{member.instrument}}</td>
+                    <td><button type="submit"><i class="fa fa-edit" @click="editMember(member)"></i></button></td>
+                    <td><button type="submit"><i class="fa fa-remove" @click="delMember(member)"></i></button></td>
                 </tr>
                 </tbody>
             </table>
@@ -62,6 +64,7 @@
 
         </main>
         <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
         <script src="scripts.js"></script>
     </body>
 

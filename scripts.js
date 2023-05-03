@@ -29,7 +29,23 @@ const handlingForms = {
             } else {
                 alert("Todos os campos devem ser preenchidos!")
             }
-        }
+        },
+
+        editMember: function(member){
+            this.newMember = member            
+        },
+
+        delMember: function(member){
+            var position = -1;
+            this.members.forEach(element => {
+                if(element === member) {
+                    console.log("achou")
+                    position = this.members.indexOf(element)
+                }
+            });
+            this.members.splice(position, 1)
+            console.log(position)
+        },
     },
 
 };
