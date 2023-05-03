@@ -17,11 +17,13 @@ const handlingForms = {
         return {
             members: window.members,
             //novo membro com seus atributos nulos
-            newMember: {
-                fname: null,
-                lname: null,
-                instrument: null,
-            }
+            newMember: {}
+        }
+    },
+
+    methods: {
+        addMember: function(){
+            this.members.push(this.newMember);
         }
     },
 
